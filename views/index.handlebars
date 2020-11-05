@@ -1,12 +1,22 @@
 <h1>Eat-da-Burger!</h1>
 
-<h2>Burgers!</h2></h2>
-
+<h2>All The Burgers</h2>
 <ul>
   {{#each burger_data}}
-  <h1>{{this.devoured}}</h1>
+  <h4>{{this.burger_name}}</h4>
+  {{/each}}
+
+</ul>
+
+<h2>Burgers That Were Devoured!</h2>
+<ul>
+  {{#each burger_data}}
+    {{#if devoured}}
+      <h4>{{this.burger_name}}</h4>
+    {{/if}}
   {{/each}}
 </ul>
+
 
 
 <h2>Add a Burger</h2>
@@ -15,6 +25,12 @@
   <div class="form-group">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleepy">Devoured?</label><br>
+    <input type="radio" name="devour" value="1" checked> Not Devoured!<br>
+    <input type="radio" name="devour" value="0"> Devoured
   </div>
 
 
