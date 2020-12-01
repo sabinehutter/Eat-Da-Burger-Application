@@ -8,7 +8,7 @@
    
    When the application begins it will appear in your terminal as the photo below. 
    
-   ![Application Entry](https://github.com/sabinehutter/Automated-Employee-Tracker/blob/main/Assets/entry-aet-meessage.png)
+   ![Application Entry](https://github.com/sabinehutter/Eat-Da-Burger-Application/blob/main/public/assets/burger_intro.png)
 
    This application prompts you to enter additional burgers and decide whether to eat them or not!
    
